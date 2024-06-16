@@ -4,20 +4,20 @@ Nesse projeto desenvolvo uma aplicação com base nos pilares da **Programação
 
 ## **Descrição**
 
-O programa consiste em reproduzir funcionalidades básicas de uma conta bancária utilizando a linguagem **`Java`** apicando a **`Clean Architecture`** na estrutura do projeto.
+O programa consiste em reproduzir funcionalidades básicas de uma conta bancária utilizando a linguagem **`Java`** aplicando a **`Clean Architecture`** na estrutura do projeto.
 
 ## **Funcionalidades**
 
 - **`Criar conta bancária`**: Permite a criação de novas contas bancárias com um saldo inicial zerado, um valor predefinido para a agência e um valor para o número da conta que será incrementado a cada criação de uma nova conta.
 
-  > [!NOTE]
-  > O nome do cliente e tipo de conta devem ser informados ao criar uma conta.
-
+> [!NOTE]
+> O nome do cliente e tipo de conta devem ser informados ao criar uma conta.
   ```java
   public void criarConta(String nome, String tipoConta) {
     //Implementação
   }
   ```
+
 
 - **`Sacar`**: Permite retirar fundos da conta bancária, se houver saldo disponível. Aqui são lançadas exceções em caso de erros de entrada.
 
@@ -26,6 +26,7 @@ O programa consiste em reproduzir funcionalidades básicas de uma conta bancári
     //Implentação
   }
   ```
+
 
 - **`Depositar`**: Permite adicionar fundos à conta bancária. Aqui também são lançadas exceções em caso de erros de entrada.
 
@@ -37,11 +38,13 @@ O programa consiste em reproduzir funcionalidades básicas de uma conta bancári
 
 - **`Transferir`**: Permite transferir um determinado valor de uma conta origem para uma conta destino.
 
+
   ```java
   public void transferir(double valor, String clienteOrigem, String clienteDestino) {
       //Implementação
     }
   ```
+
 
 - **`Deletar Conta`**: Permite deletar uma conta por meio do nome de um cliente existente, lançando uma exceção caso não o encontre.
   ```java
@@ -50,6 +53,7 @@ O programa consiste em reproduzir funcionalidades básicas de uma conta bancári
   }
   ```
 - **`Atualizar Conta`**: Permite atualizar o nome do cliente da conta.
+
 
   ```java
   public Conta atualizarConta(String nome, String novoNome) {
@@ -66,6 +70,7 @@ O programa consiste em reproduzir funcionalidades básicas de uma conta bancári
   ```
 
 - **`Listar Contas`**: Exibe as contas existentes em memória.
+
   ```java
   public List<Conta> listarContas() {
     //Implementação
